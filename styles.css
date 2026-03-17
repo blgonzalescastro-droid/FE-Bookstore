@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222222;
+    letter-spacing: -0.5px;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    user-select: none;
+}
+
+.search-bar :placeholder-shown {
+    color: #999;
+}
+
+.search-bar input {
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.user-utilities button {
+    border: none;
+    background-color: #f8f8f8;
+    gap: 1rem;
+}
+
+.user-utilities .material-symbols-outlined:hover {
+    color: #2f1600;
+}
+
+.user-utilities .material-symbols-outlined {
+    font-size: 28px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 16px 0;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #002d5e;
+}
+
+.hero {
+    padding: 120px 24px 40px;
+    background-color: #d7e0ee;
+    width: 100%;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    font-size: 18px;
+    max-width: 480px;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    width: fit-content;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    border: #111111 2px solid;
+    background-color: #111111;
+    border-radius: 15px;
+    padding: 10px 12px;
+    transition: color 0.3s ease;
+}
+
+.cta-button:hover {
+    color: #c5c6c7;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    max-height: 280px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.best-sellers {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.book-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.book-image {
+    position: relative;
+    aspect-ratio: 4/4;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+}
+
+.book-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.book-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+.testimonial {
+    padding: 80px 24px;
+    background-color: #353638;
+    text-align: center;
+}
+
+.testimonial-quote {
+
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.author-title {
+    font-size: 14px;
+    color: white;
+}
+
+.newsletter {
+    padding: 80px 24px;
+    background-color: #ffffff;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-title {
+
+    font-size: 36px;
+    font-weight: 500;
+    color: #353638;
+    margin-bottom: 12px;
+}
+
+.newsletter-description {
+    font-size: 16px;
+    color: #353638;
+    margin-bottom: 32px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 15px;
+    border: 1px solid #353638;
+    border-radius: 6px;
+    background-color: white;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.newsletter-input:focus {
+    border-color: #333;
+}
+
+.newsletter-input::placeholder {
+    color: #353638;
+}
+
+.footer {
+    padding: 64px 24px 32px;
+    background-color: #111111;
+    color: white;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-brand .logo {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    max-width: 280px;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-link {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.copyright {
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 16px;
+}

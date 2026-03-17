@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-main-container">
+            <div class="header-container">
+                <div class="logo">
+                    <span class="material-symbols-outlined">
+                        import_contacts
+                    </span>
+                    BookStore
+                </div>
+
+                <form class="search-bar">
+                    <input type="text" placeholder="Search for books, authors, genres..." aria-label="Search">
+
+                </form>
+
+                <div class="user-utilities">
+                    <button aria-label="Profile"><span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </button>
+                    <button aria-label="Wishlist"><span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+                    <button aria-label="Cart"><span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+            <nav class="navbar">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Books</a>
+                <a href="#" class="nav-link">Best Seller</a>
+                <a href="#" class="nav-link">Ebooks</a>
+                <a href="#" class="nav-link">Audiobooks</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Next Great Read</h1>
+                <p class="hero-description">Explore our vast collection of books across all genres and find your next
+                    favorite.</p>
+                <a href="#" class="cta-button">Shop Now</a>
+
+            </div>
+            <div class="hero-image">
+                <img src="./Images/portada.jfif" alt="Hero Image">
+            </div>
+        </div>
+    </div>
+
+    <section class="best-sellers">
+        <div class="best-sellers-container">
+            <h2>Best sellers</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="./Images/Book1.webp" alt="The Great Gatsby">
+                    </div>
+                    <h3>The Great Gatsby</h3>
+                    <p>F. Scott Fitzgerald</p>
+                    <p>$19.99</p>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="./Images/book2.webp" alt="Sapiens: A Brief History of Humankind">
+                    </div>
+                    <h3> Sapiens: A Brief History of Humankind</h3>
+                    <p>Yuval Noah Harari </p>
+                    <p>$24.99</p>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="./Images/book3.webp" alt="Project Hail Mary">
+                    </div>
+                    <h3>Project Hail Mary</h3>
+                    <p>Andy Weir</p>
+                    <p>$14.99</p>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="./Images/book4.webp" alt="Heated Rivalry">
+                    </div>
+                    <h3>Heated Rivalry</h3>
+                    <p>Rachel Reid</p>
+                    <p>$14.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial">
+        <div class="container">
+            <p class="testimonial-quote">
+                "BookStore has become my go-to bookstore. Their curated selection and thoughtful recommendations have
+                introduced me to authors I never would have discovered on my own."
+            </p>
+            <div class="testimonial-author">
+                <span class="author-name">Sarah Mitchell</span>
+                <span class="author-title">Avid Reader & Book Club Host</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2 class="newsletter-title">Join Our Reading Circle</h2>
+            <p class="newsletter-description">
+                Subscribe for weekly book recommendations, exclusive offers, and literary insights delivered to your
+                inbox.
+            </p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+
+                <span class="logo">BookStore</span>
+                <p class="footer-description">
+                    Your literary haven since 2015. We believe every reader deserves access to stories that inspire,
+                    challenge, and transform.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Shop</h4>
+                <nav class="footer-links">
+                    <a href="#" class="footer-link">New Arrivals</a>
+                    <a href="#" class="footer-link">Best Sellers</a>
+                    <a href="#" class="footer-link">Coming Soon</a>
+                    <a href="#" class="footer-link">Gift Cards</a>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Support</h4>
+                <nav class="footer-links">
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Shipping Info</a>
+                    <a href="#" class="footer-link">Returns</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg fill="#000000" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path
+                                        d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z">
+                                    </path>
+                                    <path
+                                        d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8 c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z">
+                                    </path>
+                                    <path
+                                        d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8 c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg fill="#000000" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill-rule: evenodd;
+                                        clip-rule: evenodd;
+                                    }
+                                </style>
+                                <path class="st0"
+                                    d="M12.6,16.1v11.6c0,0.2,0.1,0.3,0.3,0.3h4.6c0.2,0,0.3-0.1,0.3-0.3V15.9h3.4c0.2,0,0.3-0.1,0.3-0.3l0.3-3.6 c0-0.2-0.1-0.3-0.3-0.3h-3.7V9.2c0-0.6,0.5-1.1,1.2-1.1h2.6C21.9,8.1,22,8,22,7.8V4.3C22,4.1,21.9,4,21.7,4h-4.4 c-2.6,0-4.7,1.9-4.7,4.3v3.4h-2.3c-0.2,0-0.3,0.1-0.3,0.3v3.6c0,0.2,0.1,0.3,0.3,0.3h2.3V16.1z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="800px" height="800px" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.23336 4.69629C7.23336 2.96884 8.63335 1.56857 10.36 1.56857C11.3736 1.56857 12.183 2.04804 12.7254 2.74385C13.3079 2.62467 13.8557 2.40913 14.3513 2.11508C14.1559 2.72598 13.7424 3.2396 13.2033 3.56463C13.2038 3.56568 13.2042 3.56674 13.2047 3.56779C13.7334 3.50361 14.2364 3.36302 14.7048 3.15546L14.7037 3.15715C14.3667 3.66183 13.9431 4.10736 13.4561 4.47034C13.4823 4.64672 13.4956 4.82427 13.4956 5.00079C13.4956 8.6871 10.6873 12.9746 5.52122 12.9746C3.93906 12.9746 2.46544 12.511 1.22505 11.7152C0.992632 11.5661 0.925108 11.2568 1.07423 11.0244C1.0874 11.0038 1.10183 10.9846 1.11734 10.9666C1.20582 10.8202 1.37438 10.7309 1.5554 10.7522C2.47066 10.8601 3.38568 10.7485 4.19219 10.3962C3.39226 10.0434 2.77129 9.35975 2.50204 8.51974C2.45359 8.3686 2.48835 8.20311 2.59351 8.08422C2.59716 8.0801 2.60087 8.07606 2.60464 8.0721C1.96391 7.50819 1.55973 6.68208 1.55973 5.76143V5.72759C1.55973 5.56814 1.64411 5.42059 1.78155 5.33974C1.82671 5.31317 1.87537 5.29511 1.92532 5.28558C1.70549 4.86154 1.58116 4.37984 1.58116 3.86958C1.58116 3.40165 1.58384 2.81192 1.91332 2.28081C1.98718 2.16175 2.10758 2.08915 2.2364 2.07195C2.42588 2.01237 2.64087 2.06969 2.77406 2.23302C3.86536 3.57126 5.44066 4.49583 7.23366 4.73961L7.23336 4.69629ZM5.52122 11.9746C4.73387 11.9746 3.97781 11.8435 3.27248 11.6023C4.13012 11.4538 4.95307 11.1159 5.66218 10.5602C5.81211 10.4427 5.87182 10.2435 5.81126 10.0629C5.7507 9.88234 5.583 9.75943 5.39255 9.75607C4.68968 9.74366 4.06712 9.39716 3.67793 8.86845C3.86828 8.85306 4.05428 8.82039 4.23445 8.77167C4.43603 8.71716 4.57363 8.53114 4.56674 8.32243C4.55985 8.11372 4.41029 7.93718 4.20555 7.89607C3.42694 7.73977 2.79883 7.16764 2.56169 6.42174C2.76255 6.47025 2.97102 6.4991 3.18482 6.5061C3.38563 6.51267 3.56646 6.38533 3.62795 6.19405C3.68943 6.00277 3.61666 5.79391 3.44963 5.68224C2.86523 5.29155 2.48116 4.62464 2.48116 3.86958C2.48116 3.70213 2.48352 3.55268 2.49355 3.41719C3.85115 4.79913 5.70873 5.68931 7.77588 5.79338C7.93225 5.80126 8.08328 5.73543 8.18395 5.61553C8.28463 5.49562 8.32332 5.33548 8.28851 5.18284C8.25255 5.02517 8.23336 4.86284 8.23336 4.69629C8.23336 3.52085 9.18591 2.56857 10.36 2.56857C11.5943 2.56857 12.4956 3.71208 12.4956 5.00079C12.4956 8.25709 10.0202 11.9746 5.52122 11.9746Z"
+                                fill="#000000" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">2026 BookStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
