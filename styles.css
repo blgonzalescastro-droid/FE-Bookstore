@@ -10,8 +10,11 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: white;
     color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -37,6 +40,7 @@ img {
     right: 0;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    z-index: 999;
 }
 
 .header-main-container {
@@ -87,7 +91,7 @@ img {
 }
 
 .user-utilities .material-symbols-outlined:hover {
-    color: #2f1600;
+    color: #000000;
 }
 
 .user-utilities .material-symbols-outlined {
@@ -111,7 +115,7 @@ img {
 }
 
 .nav-link:hover {
-    color: #002d5e;
+    color: #000000;
 }
 
 .hero {
@@ -185,9 +189,16 @@ img {
     margin: 0 auto;
 }
 
+.best-sellers h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #333;
+}
+
 .book-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 24px;
 }
 
@@ -215,14 +226,15 @@ img {
 }
 
 .book-card h3 {
-    font-size: 1rem;
+    font-size: 12px;
+    font-weight: 600;
     color: #333;
     margin: 0.5rem 0;
 }
 
 .book-card p {
     color: #555;
-    font-size: 0.9rem;
+    font-size: 12px;
 }
 
 
@@ -234,7 +246,7 @@ img {
 
 .testimonial-quote {
 
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     font-style: italic;
     color: white;
@@ -274,7 +286,7 @@ img {
 
 .newsletter-title {
 
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     color: #353638;
     margin-bottom: 12px;
@@ -296,7 +308,7 @@ img {
     padding: 14px 20px;
     font-size: 15px;
     border: 1px solid #353638;
-    border-radius: 6px;
+    border-radius: 15px;
     background-color: white;
     color: white;
     outline: none;
@@ -311,7 +323,22 @@ img {
     color: #353638;
 }
 
+.btn-newsletter {
+    flex: 0.2;
+    border: 1px solid #353638;
+    border-radius: 15px;
+    background-color: #353638;
+    color: white;
+}
+
+.btn-newsletter:hover {
+    color: black;
+}
+
 .footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    width: 100%;
     padding: 64px 24px 32px;
     background-color: #111111;
     color: white;
@@ -328,7 +355,7 @@ img {
 
 .footer-brand .logo {
     color: white;
-    margin-bottom: 16px;
+
 }
 
 .footer-description {
@@ -369,9 +396,10 @@ img {
 }
 
 .social-link {
+    background-color: rgba(255, 255, 255, 0.7);
     width: 36px;
     height: 36px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -384,8 +412,14 @@ img {
     border-color: white;
 }
 
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .copyright {
     font-size: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
     padding-top: 16px;
+    display: flex;
+    justify-content: center;
 }
