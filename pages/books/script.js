@@ -257,7 +257,7 @@ let cart = [];
 // API 
 async function getBooks () {
     try {
-        const response = await fetch("/data/books.json");
+        const response = await fetch("../../data/books.json");
         if (!response.ok){ 
             throw new Error(response.status);
         } 
