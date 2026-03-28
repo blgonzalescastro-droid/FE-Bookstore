@@ -5,7 +5,7 @@ const books = [
         author: "F. Scott Fitzgerald",
         price: 19.99,
         category: "Classic Fiction",
-        img: "./Images/Book1.webp",
+        img: "assets/Images/Book1.webp",
         rating: 4.7,
         reviews: 15200,
         badge: "Bestseller",
