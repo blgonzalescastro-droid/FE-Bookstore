@@ -5,12 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* 
+
 html {
     scroll-behavior: smooth;
     min-height: 100vh;
     
-} */
+}
 
 body {
     background-color: white;
@@ -125,6 +125,22 @@ main {
     color: #000000;
 }
 
+.cart-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(143, 23, 39);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
     padding: 120px 24px 40px;
     background-color: #d7e0ee;
@@ -206,7 +222,8 @@ main {
 .book-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 24px;
+    gap: 10px;
+    
 }
 
 .book-card {
@@ -214,18 +231,21 @@ main {
     overflow: hidden;
     border: 1px solid #ddd;
     cursor: pointer;
+    height: 100%;
 }
 
 .book-image {
     position: relative;
     aspect-ratio: 4/4;
-    overflow: hidden;
+    width: 100%;
+  height: 250px;
+  overflow: hidden;
 }
 
 .book-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .book-image:hover {
@@ -233,6 +253,8 @@ main {
 }
 
 .book-card h3 {
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
     font-weight: 600;
     color: #333;
@@ -240,6 +262,8 @@ main {
 }
 
 .book-card p {
+    padding-left: 10px;
+    padding-right: 10px;
     color: #555;
     font-size: 12px;
 }
